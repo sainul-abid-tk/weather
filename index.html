@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body class="font-sans">
+   <div class="grid grid-cols-12 h-screen">
+        <div class="col-start-1 col-end-8 grid grid-cols-2 bg-[url('https://cdn.wallpapersafari.com/50/41/dmL2E0.jpg')] bg-cover text-white">
+            <div class="flex flex-col h-[700px] justify-between">
+            <h1 class="text-4xl mt-4 ms-4 font-bold">WEATHER</h1>
+            <div>
+            <h1 class="text-6xl font-bold" id="temp"></h1>
+            <p id="feelslike"></p>
+            <h1 class="text-2xl font-bold mt-10" id="place"></h1>
+            <p id="date"></p>
+            </div>
+            </div>
+            <div class="flex justify-start items-end">
+                <p id="main"></p>
+            </div>
+        </div>
+        <div class="col-start-8 col-end-13 bg-slate-700 px-3">
+            <input id="display" type="text" class="w-full h-12 outline-none bg-slate-700 text-white" placeholder="Enter a place">
+            <hr class="">
+            <div class="h-44">
+            <button class="mt-5 border-2 px-4 py-1 rounded-2xl bg-green-500 border-green-500 text-white font-bold" id="search" onclick="getWeatherData()">Search</button>
+            </div>
+            <hr>
+            <h2 class="text-xl mt-16 font-bold">Weather Details</h2>
+            <h4 class="text-white mt-5">Country</h4>
+            <h4 class="mt-5" id="country"></h4>
+            <h4 class="text-white mt-5">Humidity</h4>
+            <h4 class="mt-5" id="humidity"></h4>
+            <h4 class="text-white mt-5">Wind</h4>
+            <h4 class="mt-5" id="wind"></h4>
+            <h4 class="text-white mt-5">Pressure</h4>
+            <h4 class="mt-5" id="pressure"></h4>
+            <hr class="mt-10">
+        </div>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
